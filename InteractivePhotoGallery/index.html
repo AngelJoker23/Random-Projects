@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Photo Gallery</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="images" href="Photos/"
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--Header Content like a title or a navigation bar-->
+            <h1>My Photo Gallery</h1>
+            <p>Explore my collection of high-quality images of my furry little children!</p>
+        </header>
+
+        <section id="gallery">
+            <div class="photo">
+                <img src="Photos/image-1.jpg" alt="Welcome Baby Grl at 7weeks old!">
+                <p class="caption">Baby Grl!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-2.jpg" alt="Baby Grl 7wks">
+                <p class="caption">I C U Babiez!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-3.jpg" alt="Baby Grl 7wks">
+                <p class="caption">My Babiez!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-4.jpg" alt="Biggie 4Years old">
+                <p class="caption">My Biggie Biggers!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-5.jpg" alt="Biggie 4Years old">
+                <p class="caption">My Biggie Boy!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-6.jpg" alt="Baby Grl">
+                <p class="caption">Cuddly Baby Grl</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-7.jpg" alt="Baby Grl on vacation">
+                <p class="caption">Blizzard Babiez</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-8.jpg" alt="Baby Grl 6months">
+                <p class="caption">Beautiful Babiez</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-9.jpg" alt="Baby Grl and Kelly">
+                <p class="caption">Chillin with her Buddy!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-10.jpg" alt="Baby Grl and Biggie">
+                <p class="caption">Lil Miss Bored Copy Cat!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-11-babieznbiggie.jpg" alt="Babiez n Biggie">
+                <p class="caption">My two Beautiful Children</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-12.jpg" alt="Biggie">
+                <p class="caption">Play with me!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-13.jpg" alt="Baby Grl">
+                <p class="caption">Snuggly Dreamz</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-14.jpg" alt="Baby Grl">
+                <p class="caption">Out for a cruz</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-15.jpg" alt="Millie and Baby Grl">
+                <p class="caption">Lazy Dayz</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-16.jpg" alt="Millie and Babiez">
+                <p class="caption">Snuggle Buddies!</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-17.jpg" alt="Baby Grl">
+                <p class="caption">Cozy nap</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-18.jpg" alt="Collage of Baby Grl">
+                <p class="caption">Babiez Collage</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-19.jpg" alt="Millie and Baby Grl">
+                <p class="caption">Tired Pups</p>
+            </div>
+            <div class="photo">
+                <img src="Photos/image-20.jpg" alt="Baby Grl">
+                <p class="caption">Break Time!</p>
+            </div>
+        </section>
+        <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+        <main>
+            <nav>
+  <button class="filter" onclick="filterGallery('all')">All</button>
+  <button class="filter" onclick="filterGallery('landscapes')">Landscapes</button>
+  <button class="filter" onclick="filterGallery('portraits')">Portraits</button>
+  <button class="filter" onclick="filterGallery('collages')">Collages</button>
+  <!-- Add more filters as needed -->
+</nav>
+            <!--Gallery content will go here-->
+        </main>
+        <footer class="section footer-classic context-dark bg-image" style="background: #122b8f;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4">
+                <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>Company</span><span> - </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>798 South Park Avenue, New York, USA</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">compagny@email.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">1.666.420.666S</a> <span>or</span> <a href="tel:#">1.55.652.268</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>Instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>Twitter</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>Youtube</span></a></div>
+        </div>
+      </footer>
+
+    </body>
+</html>
